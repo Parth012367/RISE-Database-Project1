@@ -1,0 +1,20 @@
+<!-- templates/layout.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inside <head> of layout.html -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center">Hospital Patient Records</h1>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
